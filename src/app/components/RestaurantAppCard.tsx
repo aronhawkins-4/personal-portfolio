@@ -5,13 +5,15 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { BsChevronDown, BsChevronUp } from 'react-icons/bs';
 import { IoFastFoodOutline } from 'react-icons/io5';
-import change_vote from '../../../public/restaurants/change_vote.png';
-import choose_location from '../../../public/restaurants/choose_location.png';
-import location_default from '../../../public/restaurants/location_default.png';
-import vote from '../../../public/restaurants/vote.png';
+import cld from '../utils/Cloudinary';
+import { fill } from '@cloudinary/url-gen/actions/resize';
 
 export const RestaurantAppCard = () => {
 	const [isOpen, setIsOpen] = useState(false);
+	const changeVote = cld.image('change_vote').resize(fill()).toURL();
+	const chooseLocation = cld.image('choose_location').resize(fill()).toURL();
+	const vote = cld.image('vote').resize(fill()).toURL();
+	const locationDefault = cld.image('location_default').resize(fill()).toURL();
 
 	return (
 		<div className='flex flex-col items-center'>
@@ -70,36 +72,105 @@ export const RestaurantAppCard = () => {
 					</div>
 					<div className='grid grid-cols-2 gap-4 w-full'>
 						<div className='relative w-full h-0 pb-[56.25%] rounded-xl overflow-hidden'>
-							<Image
-								src={choose_location}
-								alt='Home screen of Airbnb clone app'
-								fill
-								className='object-cover object-center'
-							/>
+							{!chooseLocation && (
+								<div className='flex items-center justify-center w-full h-full bg-gray-300 rounded sm:w-96 dark:bg-gray-700 absolute'>
+									<svg
+										className='w-10 h-10 text-gray-200 dark:text-gray-600'
+										aria-hidden='true'
+										xmlns='http://www.w3.org/2000/svg'
+										fill='currentColor'
+										viewBox='0 0 20 18'
+									>
+										<path d='M18 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4.376 10.481A1 1 0 0 1 16 15H4a1 1 0 0 1-.895-1.447l3.5-7A1 1 0 0 1 7.468 6a.965.965 0 0 1 .9.5l2.775 4.757 1.546-1.887a1 1 0 0 1 1.618.1l2.541 4a1 1 0 0 1 .028 1.011Z' />
+									</svg>
+									<span className='sr-only'>Loading...</span>
+								</div>
+							)}
+							{chooseLocation && (
+								<Image
+									src={chooseLocation}
+									alt='Home screen of Airbnb clone app'
+									fill
+									className='object-cover object-center'
+									sizes='any'
+								/>
+							)}
 						</div>
 						<div className='relative w-full h-0 pb-[56.25%] rounded-xl overflow-hidden'>
-							<Image
-								src={location_default}
-								alt='Home screen of Airbnb clone app'
-								fill
-								className='object-cover object-center'
-							/>
+							{!locationDefault && (
+								<div className='flex items-center justify-center w-full h-full bg-gray-300 rounded sm:w-96 dark:bg-gray-700 absolute'>
+									<svg
+										className='w-10 h-10 text-gray-200 dark:text-gray-600'
+										aria-hidden='true'
+										xmlns='http://www.w3.org/2000/svg'
+										fill='currentColor'
+										viewBox='0 0 20 18'
+									>
+										<path d='M18 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4.376 10.481A1 1 0 0 1 16 15H4a1 1 0 0 1-.895-1.447l3.5-7A1 1 0 0 1 7.468 6a.965.965 0 0 1 .9.5l2.775 4.757 1.546-1.887a1 1 0 0 1 1.618.1l2.541 4a1 1 0 0 1 .028 1.011Z' />
+									</svg>
+									<span className='sr-only'>Loading...</span>
+								</div>
+							)}
+							{locationDefault && (
+								<Image
+									src={locationDefault}
+									alt='Home screen of Airbnb clone app'
+									fill
+									className='object-cover object-center'
+									sizes='any'
+								/>
+							)}
+						</div>
+
+						<div className='relative w-full h-0 pb-[56.25%] rounded-xl overflow-hidden'>
+							{!vote && (
+								<div className='flex items-center justify-center w-full h-full bg-gray-300 rounded sm:w-96 dark:bg-gray-700 absolute'>
+									<svg
+										className='w-10 h-10 text-gray-200 dark:text-gray-600'
+										aria-hidden='true'
+										xmlns='http://www.w3.org/2000/svg'
+										fill='currentColor'
+										viewBox='0 0 20 18'
+									>
+										<path d='M18 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4.376 10.481A1 1 0 0 1 16 15H4a1 1 0 0 1-.895-1.447l3.5-7A1 1 0 0 1 7.468 6a.965.965 0 0 1 .9.5l2.775 4.757 1.546-1.887a1 1 0 0 1 1.618.1l2.541 4a1 1 0 0 1 .028 1.011Z' />
+									</svg>
+									<span className='sr-only'>Loading...</span>
+								</div>
+							)}
+							{vote && (
+								<Image
+									src={vote}
+									alt='Home screen of Airbnb clone app'
+									fill
+									className='object-cover object-center'
+									sizes='any'
+								/>
+							)}
 						</div>
 						<div className='relative w-full h-0 pb-[56.25%] rounded-xl overflow-hidden'>
-							<Image
-								src={vote}
-								alt='Home screen of Airbnb clone app'
-								fill
-								className='object-cover object-center'
-							/>
-						</div>
-						<div className='relative w-full h-0 pb-[56.25%] rounded-xl overflow-hidden'>
-							<Image
-								src={change_vote}
-								alt='Home screen of Airbnb clone app'
-								fill
-								className='object-cover object-center'
-							/>
+							{!changeVote && (
+								<div className='flex items-center justify-center w-full h-full bg-gray-300 rounded sm:w-96 dark:bg-gray-700 absolute'>
+									<svg
+										className='w-10 h-10 text-gray-200 dark:text-gray-600'
+										aria-hidden='true'
+										xmlns='http://www.w3.org/2000/svg'
+										fill='currentColor'
+										viewBox='0 0 20 18'
+									>
+										<path d='M18 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4.376 10.481A1 1 0 0 1 16 15H4a1 1 0 0 1-.895-1.447l3.5-7A1 1 0 0 1 7.468 6a.965.965 0 0 1 .9.5l2.775 4.757 1.546-1.887a1 1 0 0 1 1.618.1l2.541 4a1 1 0 0 1 .028 1.011Z' />
+									</svg>
+									<span className='sr-only'>Loading...</span>
+								</div>
+							)}
+							{changeVote && (
+								<Image
+									src={changeVote}
+									alt='Home screen of Airbnb clone app'
+									fill
+									className='object-cover object-center'
+									sizes='any'
+								/>
+							)}
 						</div>
 					</div>
 				</div>

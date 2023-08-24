@@ -3,17 +3,18 @@
 import { useState } from 'react';
 import { BsChevronDown, BsChevronUp } from 'react-icons/bs';
 import { PiHouse } from 'react-icons/pi';
-import home_screen from '../../../public/airbnb/home_screen.png';
-import login from '../../../public/airbnb/login.png';
-import dates from '../../../public/airbnb/dates.png';
-import property from '../../../public/airbnb/property.png';
 import Image from 'next/image';
 import Link from 'next/link';
-import LightGallery from 'lightgallery/react';
-import 'lightgallery/css/lightgallery.css';
+import cld from '../utils/Cloudinary';
+import { fill } from '@cloudinary/url-gen/actions/resize';
 
 export const AirbnbAppCard = () => {
 	const [isOpen, setIsOpen] = useState(false);
+
+	const homeScreen = cld.image('home_screen').resize(fill()).toURL();
+	const login = cld.image('login').resize(fill()).toURL();
+	const dates = cld.image('dates').resize(fill()).toURL();
+	const property = cld.image('property').resize(fill()).toURL();
 
 	return (
 		<div className='flex flex-col items-center'>
@@ -69,74 +70,108 @@ export const AirbnbAppCard = () => {
 					</div>
 					<div className='grid grid-cols-2 gap-4 w-full'>
 						<div className='relative w-full h-0 pb-[56.25%] rounded-xl overflow-hidden'>
-							<Image
-								src={home_screen}
-								alt='Home screen of Airbnb clone app'
-								fill
-								className='object-cover object-center'
-							/>
+							{!homeScreen && (
+								<div className='flex items-center justify-center w-full h-full bg-gray-300 rounded sm:w-96 dark:bg-gray-700 absolute'>
+									<svg
+										className='w-10 h-10 text-gray-200 dark:text-gray-600'
+										aria-hidden='true'
+										xmlns='http://www.w3.org/2000/svg'
+										fill='currentColor'
+										viewBox='0 0 20 18'
+									>
+										<path d='M18 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4.376 10.481A1 1 0 0 1 16 15H4a1 1 0 0 1-.895-1.447l3.5-7A1 1 0 0 1 7.468 6a.965.965 0 0 1 .9.5l2.775 4.757 1.546-1.887a1 1 0 0 1 1.618.1l2.541 4a1 1 0 0 1 .028 1.011Z' />
+									</svg>
+									<span className='sr-only'>Loading...</span>
+								</div>
+							)}
+							{homeScreen && (
+								<Image
+									src={homeScreen}
+									alt='Home screen of Airbnb clone app'
+									fill
+									className='object-cover object-center'
+									sizes='any'
+								/>
+							)}
 						</div>
 						<div className='relative w-full h-0 pb-[56.25%] rounded-xl overflow-hidden'>
-							<Image
-								src={property}
-								alt='Home screen of Airbnb clone app'
-								fill
-								className='object-cover object-center'
-							/>
+							{!property && (
+								<div className='flex items-center justify-center w-full h-full bg-gray-300 rounded sm:w-96 dark:bg-gray-700 absolute'>
+									<svg
+										className='w-10 h-10 text-gray-200 dark:text-gray-600'
+										aria-hidden='true'
+										xmlns='http://www.w3.org/2000/svg'
+										fill='currentColor'
+										viewBox='0 0 20 18'
+									>
+										<path d='M18 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4.376 10.481A1 1 0 0 1 16 15H4a1 1 0 0 1-.895-1.447l3.5-7A1 1 0 0 1 7.468 6a.965.965 0 0 1 .9.5l2.775 4.757 1.546-1.887a1 1 0 0 1 1.618.1l2.541 4a1 1 0 0 1 .028 1.011Z' />
+									</svg>
+									<span className='sr-only'>Loading...</span>
+								</div>
+							)}
+							{property && (
+								<Image
+									src={property}
+									alt='Home screen of Airbnb clone app'
+									fill
+									className='object-cover object-center'
+									sizes='any'
+								/>
+							)}
 						</div>
 						<div className='relative w-full h-0 pb-[56.25%] rounded-xl overflow-hidden'>
-							<Image
-								src={dates}
-								alt='Home screen of Airbnb clone app'
-								fill
-								className='object-cover object-center'
-							/>
+							{!dates && (
+								<div className='flex items-center justify-center w-full h-full bg-gray-300 rounded sm:w-96 dark:bg-gray-700 absolute'>
+									<svg
+										className='w-10 h-10 text-gray-200 dark:text-gray-600'
+										aria-hidden='true'
+										xmlns='http://www.w3.org/2000/svg'
+										fill='currentColor'
+										viewBox='0 0 20 18'
+									>
+										<path d='M18 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4.376 10.481A1 1 0 0 1 16 15H4a1 1 0 0 1-.895-1.447l3.5-7A1 1 0 0 1 7.468 6a.965.965 0 0 1 .9.5l2.775 4.757 1.546-1.887a1 1 0 0 1 1.618.1l2.541 4a1 1 0 0 1 .028 1.011Z' />
+									</svg>
+									<span className='sr-only'>Loading...</span>
+								</div>
+							)}
+							{dates && (
+								<Image
+									src={dates}
+									alt='Home screen of Airbnb clone app'
+									fill
+									className='object-cover object-center'
+									sizes='any'
+								/>
+							)}
 						</div>
 						<div className='relative w-full h-0 pb-[56.25%] rounded-xl overflow-hidden'>
-							<Image
-								src={login}
-								alt='Home screen of Airbnb clone app'
-								fill
-								className='object-cover object-center'
-							/>
+							{!login && (
+								<div className='flex items-center justify-center w-full h-full bg-gray-300 rounded sm:w-96 dark:bg-gray-700 absolute'>
+									<svg
+										className='w-10 h-10 text-gray-200 dark:text-gray-600'
+										aria-hidden='true'
+										xmlns='http://www.w3.org/2000/svg'
+										fill='currentColor'
+										viewBox='0 0 20 18'
+									>
+										<path d='M18 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4.376 10.481A1 1 0 0 1 16 15H4a1 1 0 0 1-.895-1.447l3.5-7A1 1 0 0 1 7.468 6a.965.965 0 0 1 .9.5l2.775 4.757 1.546-1.887a1 1 0 0 1 1.618.1l2.541 4a1 1 0 0 1 .028 1.011Z' />
+									</svg>
+									<span className='sr-only'>Loading...</span>
+								</div>
+							)}
+							{login && (
+								<Image
+									src={login}
+									alt='Home screen of Airbnb clone app'
+									fill
+									className='object-cover object-center'
+									sizes='any'
+								/>
+							)}
 						</div>
 					</div>
 				</div>
 			)}
-			{/* <LightGallery speed={300}> */}
-			<div className='relative w-full h-0 pb-[56.25%] rounded-xl overflow-hidden'>
-				<Image
-					src={home_screen}
-					alt='Home screen of Airbnb clone app'
-					fill
-					className='object-cover object-center'
-				/>
-			</div>
-			<div className='relative w-full h-0 pb-[56.25%] rounded-xl overflow-hidden'>
-				<Image
-					src={property}
-					alt='Home screen of Airbnb clone app'
-					fill
-					className='object-cover object-center'
-				/>
-			</div>
-			<div className='relative w-full h-0 pb-[56.25%] rounded-xl overflow-hidden'>
-				<Image
-					src={dates}
-					alt='Home screen of Airbnb clone app'
-					fill
-					className='object-cover object-center'
-				/>
-			</div>
-			<div className='relative w-full h-0 pb-[56.25%] rounded-xl overflow-hidden'>
-				<Image
-					src={login}
-					alt='Home screen of Airbnb clone app'
-					fill
-					className='object-cover object-center'
-				/>
-			</div>
-			{/* </LightGallery> */}
 		</div>
 	);
 };

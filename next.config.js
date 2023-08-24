@@ -1,8 +1,13 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+	images: {
+		remotePatterns: [
+			{
+				protocol: 'https',
+				hostname: 'res.cloudinary.com',
+			},
+		],
+	},
+};
 
-const withVideos = require('next-videos');
-
-module.exports = withVideos({
-	distDir: '../../.next',
-});
+module.exports = nextConfig;

@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { AboutContainer } from './AboutContainer';
 import { WorkContainer } from './WorkContainer';
-import { BgGradient } from './BgGradient';
 
 export const ContentCard = () => {
 	const [buttonToggle, setButtonToggle] = useState(false);
