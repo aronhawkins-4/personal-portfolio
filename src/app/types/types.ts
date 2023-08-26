@@ -1,13 +1,13 @@
 export enum AppType {
-	Message = 1,
-	Airbnb,
-	Vote,
-	_3D,
+    Message = 1,
+    Airbnb,
+    Vote,
+    Ipsum,
 }
 
 export enum WebsiteType {
-	ecommerce = 1,
-	business,
-	blog,
-	nonprofit,
+    ecommerce = 1,
+    business,
+    blog,
+    nonprofit,
 }
