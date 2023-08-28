@@ -65,7 +65,7 @@ export const WebsiteCard: React.FC<WebsiteCardProps> = ({ title = 'Project', des
 				</div>
 			</div>
 			{isOpen && (
-				<div className='p-8 w-full h-full border border-gray-800 border-t-0 rounded-b-xl flex flex-col-reverse gap-8 -mt-4'>
+				<div className='p-8 w-full h-full bg-black border border-gray-800 border-t-0 rounded-b-xl flex flex-col-reverse gap-8 -mt-4'>
 					<div className='flex justify-center'>
 						{link && (
 							<Link

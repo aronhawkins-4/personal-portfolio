@@ -69,7 +69,7 @@ export const AppCard: React.FC<AppCardProps> = ({ Icon, title = 'Project', descr
 				</div>
 			</div>
 			{isOpen && (
-				<div className='p-8 w-full h-full border border-gray-800 border-t-0 rounded-b-xl flex  flex-col gap-8 lg:flex-row -mt-4'>
+				<div className='p-8 w-full h-full bg-black border border-gray-800 border-t-0 rounded-b-xl flex flex-col gap-8 lg:flex-row -mt-4'>
 					<div className='flex flex-col md:items-center gap-8'>
 						<div>
 							<h3 className='text-white text-2xl font-bold text-center'>Tech Stack</h3>
