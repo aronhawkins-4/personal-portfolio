@@ -79,7 +79,7 @@ export const WorkContainer = () => {
 					<WebsiteCard
 						type={WebsiteType.business}
 						title='Centurion American'
-						description='Fully customized Wordpress CMS site for a multi-million dollar real estate development company. Utilizes text search and map filtering funcitonality.'
+						description='Fully customized Wordpress CMS site for a multi-million dollar real estate development company. Utilizes text search and map filtering functionality.'
 						link='https://www.sidekick.agency'
 						mediaLinks={['centurion_home', 'centurion_map', 'centurion_property', 'centurion_grid']}
 					/>
