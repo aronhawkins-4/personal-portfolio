@@ -36,7 +36,7 @@ export const WebsiteCard: React.FC<WebsiteCardProps> = ({ title = 'Project', des
 	return (
 		<div className='flex flex-col items-center'>
 			<div
-				className='py-4 px-8 flex flex-col gap-2 relative w-full lg:min-w-[600px] justify-center items-center rounded-2xl overflow-hidden shadow-[-.5px_1px_2px_rgba(203,213,225,.3)] z-10 cursor-pointer bg-gradient-to-tr from-black to-gray-400/50'
+				className='py-4 px-8 flex flex-col gap-2 relative w-full lg:min-w-[600px] justify-center items-center rounded-2xl overflow-hidden shadow-[-.5px_1px_2px_rgba(203,213,225,.3)] z-10 cursor-pointer bg-gradient-to-tr from-black to-gray-600'
 				onClick={() => {
 					setIsOpen((current) => !current);
 				}}
@@ -65,7 +65,7 @@ export const WebsiteCard: React.FC<WebsiteCardProps> = ({ title = 'Project', des
 				</div>
 			</div>
 			{isOpen && (
-				<div className='p-8 w-[calc(100%-4px)] h-full border border-gray-700 border-t-0 rounded-b-xl flex flex-col-reverse gap-8'>
+				<div className='p-8 w-full h-full border border-gray-800 border-t-0 rounded-b-xl flex flex-col-reverse gap-8 -mt-4'>
 					<div className='flex justify-center'>
 						{link && (
 							<Link
@@ -75,7 +75,7 @@ export const WebsiteCard: React.FC<WebsiteCardProps> = ({ title = 'Project', des
 							>
 								<button
 									className={`text-white bg-gradient-to-r
-									from-gray-400/25 to-gray-400/50 
+									from-gray-400/25 to-gray-600 
 									hover:bg-gradient-to-l focus:ring-2 focus:outline-none focus:ring-gray-200 dark:focus:ring-gray-800 font-medium text-md rounded-lg px-5 py-2.5 text-center whitespace-nowrap`}
 								>
 									View live site

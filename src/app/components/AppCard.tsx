@@ -35,13 +35,10 @@ export const AppCard: React.FC<AppCardProps> = ({ Icon, title = 'Project', descr
 			return cld.image(url).resize(fill()).toURL();
 		});
 	}
-	useEffect(() => {
-		console.log(showLightbox);
-	}, [showLightbox]);
 	return (
 		<div className='flex flex-col items-center'>
 			<div
-				className='py-4 px-8 flex flex-col gap-2 relative w-full lg:min-w-[600px] justify-center items-center rounded-2xl overflow-hidden shadow-[-.5px_1px_2px_rgba(203,213,225,.3)] z-10 cursor-pointer bg-gradient-to-tr from-black to-gray-400/50'
+				className='py-4 px-8 flex flex-col gap-2 relative w-full lg:min-w-[600px] justify-center items-center rounded-2xl overflow-hidden shadow-[-.5px_1px_2px_rgba(203,213,225,.3)] z-10 cursor-pointer bg-gradient-to-tr from-black to-gray-600'
 				onClick={() => {
 					setIsOpen((current) => !current);
 				}}
@@ -72,21 +69,16 @@ export const AppCard: React.FC<AppCardProps> = ({ Icon, title = 'Project', descr
 				</div>
 			</div>
 			{isOpen && (
-				<div className='p-8 w-[calc(100%-4px)] h-full border border-gray-700 border-t-0 rounded-b-xl flex  flex-col gap-8 lg:flex-row'>
+				<div className='p-8 w-full h-full border border-gray-800 border-t-0 rounded-b-xl flex  flex-col gap-8 lg:flex-row -mt-4'>
 					<div className='flex flex-col md:items-center gap-8'>
 						<div>
-							<h3 className='text-white text-2xl font-bold md:text-center lg:text-left'>Tech Stack</h3>
+							<h3 className='text-white text-2xl font-bold text-center'>Tech Stack</h3>
 							<ul className='grid md:grid-cols-2 lg:flex lg:flex-col w-maxitems:center gap-2 mt-2'>
 								{techStack &&
 									techStack.map((tech) => (
 										<li
 											key={tech}
-											className={`text-white text-sm font-light py-2 px-4 text-center rounded-full ${
-												type === AppType.Message && 'bg-gradient-to-tr from-green-700/75 to-green-400/75'
-											} 
-									${type === AppType.Airbnb && 'bg-gradient-to-tr from-rose-700/75 to-rose-400/75'} 
-									${type === AppType.Vote && 'bg-gradient-to-tr from-sky-700/75 to-sky-400/75'} 
-									${type === AppType.Ipsum && 'bg-gradient-to-tr from-purple-700/75 to-purple-400/75'} `}
+											className={`text-white text-md font-light text-center `}
 										>
 											{tech}
 										</li>

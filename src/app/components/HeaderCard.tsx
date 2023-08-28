@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const HeaderCard = () => {
 	return (
-		<div className='p-8 flex flex-col gap-2 relative w-full justify-center items-center rounded-2xl overflow-hidden shadow-[-.5px_1px_2px_rgba(203,213,225,.3)] z-10 bg-gradient-to-tr from-black to-gray-400/50'>
+		<div className='p-8 flex flex-col gap-2 relative w-full justify-center items-center rounded-2xl overflow-hidden shadow-[-.5px_1px_2px_rgba(203,213,225,.3)] z-10 bg-gradient-to-tr from-black to-gray-600'>
 			<div className='flex flex-col md:flex-row justify-between items-center w-full'>
 				<div className='w-16'></div>
 				<div className='flex flex-col gap-2 items-center justify-center'>

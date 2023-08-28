@@ -8,7 +8,7 @@ export const ContentCard = () => {
 	const [buttonToggle, setButtonToggle] = useState(false);
 	return (
 		<div className='flex flex-col gap-4 w-full items-center'>
-			<div className='p-2 w-full md:w-96 relative flex justify-between items-center rounded-2xl overflow-hidden shadow-sm shadow-slate-300/20 z-10 bg-gradient-to-tr from-transparent to-gray-400/50'>
+			<div className='p-2 w-full md:w-96 relative flex justify-between items-center rounded-2xl overflow-hidden shadow-sm shadow-slate-300/20 z-10 bg-gradient-to-tr from-transparent to-gray-600'>
 				<div
 					className={`top-1/2 left-1 w-[50%] absolute  ${!buttonToggle && 'left-1'} ${
 						buttonToggle && 'left-[49%]'
