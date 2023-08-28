@@ -3,17 +3,9 @@
 @tailwind utilities;
 
 :root {
-	--foreground-rgb: 0, 0, 0;
-	--background-start-rgb: 214, 219, 220;
-	--background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--foreground-rgb: 255, 255, 255;
-		--background-start-rgb: 0, 0, 0;
-		--background-end-rgb: 0, 0, 0;
-	}
+	--foreground-rgb: 255, 255, 255;
+	--background-start-rgb: 0, 0, 0;
+	--background-end-rgb: 0, 0, 0;
 }
 
 body {
@@ -35,7 +27,7 @@ body {
 	padding: 8px !important;
 	width: 48px;
 	height: 48px;
-	background-color: black !important;
+	background-color: rgba(0, 0, 0, 0.499) !important;
 	color: white;
 	border-radius: 50%;
 }
