@@ -29,3 +29,24 @@ body {
 .slider {
 	height: 100%;
 }
+.yarl__button {
+	filter: none !important;
+	/* mix-blend-mode: difference; */
+	padding: 8px !important;
+	width: 48px;
+	height: 48px;
+	background-color: black !important;
+	color: white;
+	border-radius: 50%;
+}
+.yarl__button svg {
+	margin: 0 !important;
+	width: 100%;
+	text-align: center;
+}
+@media screen and (min-width: 1024px) {
+	.vertical-text {
+		writing-mode: vertical-rl;
+		text-orientation: upright;
+	}
+}
