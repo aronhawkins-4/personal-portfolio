@@ -5,7 +5,7 @@ import {
     AiFillGithub,
     AiFillLinkedin,
 } from 'react-icons/ai';
-import { IoIosMail } from 'react-icons/Io';
+import { VscMail } from 'react-icons/vsc';
 import Link from 'next/link';
 
 export const HeaderCard = () => {
@@ -32,7 +32,7 @@ export const HeaderCard = () => {
 
                 <div className="flex flex-col gap-6 h-full w-16 p-4 bg-gradient-to-b from-gray-500 to-gray-700 rounded-full">
                     <Link href="mailto:hawkins.aron@gmail.com" target="_blank">
-                        <IoIosMail
+                        <VscMail
                             size={32}
                             className="transition hover:scale-110"
                         />
