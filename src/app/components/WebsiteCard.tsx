@@ -55,7 +55,7 @@ export const WebsiteCard: React.FC<WebsiteCardProps> = ({ title = 'Project', des
 					<div className='flex flex-col gap-2 justify-center'>
 						<div className='w-full'>
 							<h2 className='text-xl font-bold text-white'>{title}</h2>
-							<p>{description}</p>
+							<p className='text-center md:text-left leading-5'>{description}</p>
 						</div>
 					</div>
 					<div className='ml-auto flex items-center'>
