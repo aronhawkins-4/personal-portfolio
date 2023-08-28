@@ -19,7 +19,7 @@ export const AboutContainer = () => {
 					</p>
 				</div>
 				<div className=''>
-					<div className='rounded-full w-64 h-64 relative'>
+					<div className='rounded-full w-48 h-48 md:w-64 md:h-64 relative'>
 						<Image
 							src={aron_headshot}
 							alt='Aron Hawkins headshot'
