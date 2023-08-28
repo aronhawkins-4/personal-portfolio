@@ -38,10 +38,12 @@ export const AppCard: React.FC<AppCardProps> = ({
 }) => {
     const [isOpen, setIsOpen] = useState(false);
     let media;
+
     if (mediaLinks) {
         media = mediaLinks.map((url) => {
             return cld.image(url).resize(fill()).toURL();
         });
+        console.log(media);
     }
 
     return (
@@ -52,10 +54,10 @@ export const AppCard: React.FC<AppCardProps> = ({
                     setIsOpen((current) => !current);
                 }}
             >
-                <div className="flex gap-4 w-full">
+                <div className="flex gap-4 w-full items-center">
                     {type && Icon && (
                         <div
-                            className={`w-16 h-16 rounded-full flex justify-center items-center 
+                            className={`w-16 h-16 rounded-full flex justify-center items-center min-w-[64px]
 								${type === AppType.Message && 'bg-gradient-to-tr from-green-700 to-green-400'} 
 								${type === AppType.Airbnb && 'bg-gradient-to-tr from-rose-700 to-rose-400'} 
 								${type === AppType.Vote && 'bg-gradient-to-tr from-sky-700 to-sky-400'} 
@@ -80,13 +82,13 @@ export const AppCard: React.FC<AppCardProps> = ({
                 </div>
             </div>
             {isOpen && (
-                <div className="p-8 w-[calc(100%-4px)] h-full border border-gray-700 border-t-0 rounded-b-xl flex gap-16">
-                    <div className="flex flex-col">
+                <div className="p-8 w-[calc(100%-4px)] h-full border border-gray-700 border-t-0 rounded-b-xl flex  flex-col gap-8 lg:flex-row">
+                    <div className="flex flex-col items-center">
                         <div>
-                            <h3 className="text-white text-2xl font-bold">
+                            <h3 className="text-white text-2xl font-bold text-center lg:text-left">
                                 Tech Stack
                             </h3>
-                            <ul className="flex flex-col list-disc pl-5">
+                            <ul className="grid grid-cols-2 w-max gap-x-8 gap lg:flex lg:flex-col list-disc pl-5">
                                 {techStack &&
                                     techStack.map((tech) => (
                                         <li
@@ -124,7 +126,7 @@ export const AppCard: React.FC<AppCardProps> = ({
                                 showIndicators={false}
                                 swipeable
                                 showStatus={false}
-                                className="relative w-2/3"
+                                className="relative w-4/5"
                                 renderArrowPrev={(clickHandler) => {
                                     return (
                                         <div
@@ -149,7 +151,7 @@ export const AppCard: React.FC<AppCardProps> = ({
                                 {media.map((item) => (
                                     <div
                                         key={item}
-                                        className="relative w-full h-full overflow-hidden"
+                                        className="relative w-full overflow-hidden h-0 pb-[56.25%]"
                                     >
                                         <Image
                                             src={item}
@@ -157,6 +159,7 @@ export const AppCard: React.FC<AppCardProps> = ({
                                             fill
                                             className="object-cover object-center"
                                             sizes="any"
+                                            loading="eager"
                                         />
                                     </div>
                                 ))}
