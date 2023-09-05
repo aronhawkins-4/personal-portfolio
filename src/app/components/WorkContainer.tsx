@@ -80,7 +80,7 @@ export const WorkContainer = () => {
 						type={WebsiteType.business}
 						title='Centurion American'
 						description='Fully customized Wordpress CMS site for a multi-million dollar real estate development company. Utilizes text search and map filtering functionality.'
-						link='https://www.sidekick.agency'
+						link='https://centurionamerican.com'
 						mediaLinks={['centurion_home', 'centurion_map', 'centurion_property', 'centurion_grid']}
 					/>
 
