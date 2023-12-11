@@ -3,42 +3,77 @@
 @tailwind utilities;
 
 :root {
-	--foreground-rgb: 255, 255, 255;
-	--background-start-rgb: 0, 0, 0;
-	--background-end-rgb: 0, 0, 0;
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
 }
 
 body {
-	color: rgb(var(--foreground-rgb));
-	background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
 }
 
 .carousel-slider {
-	overflow: visible !important;
-	height: 100%;
+  overflow: visible !important;
+  height: 100%;
 }
 .slider-wrapper,
 .slider {
-	height: 100%;
+  height: 100%;
 }
 .yarl__button {
-	filter: none !important;
-	/* mix-blend-mode: difference; */
-	padding: 8px !important;
-	width: 48px;
-	height: 48px;
-	background-color: rgba(0, 0, 0, 0.499) !important;
-	color: white;
-	border-radius: 50%;
+  filter: none !important;
+  /* mix-blend-mode: difference; */
+  padding: 8px !important;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(0, 0, 0, 0.499) !important;
+  color: white;
+  border-radius: 50%;
 }
 .yarl__button svg {
-	margin: 0 !important;
-	width: 100%;
-	text-align: center;
+  margin: 0 !important;
+  width: 100%;
+  text-align: center;
 }
 @media screen and (min-width: 1024px) {
-	.vertical-text {
-		writing-mode: vertical-rl;
-		text-orientation: upright;
-	}
+  .vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+  }
+}
+
+@keyframes bannerCarousel {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.banner-carousel {
+  animation: bannerCarousel 45s infinite linear;
+}
+.card-hover {
+  position: relative;
+}
+.card-hover::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  background-image: linear-gradient(to right, #3b82f6, #f87171, #f43f5e);
+  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  transition: 1s ease;
+}
+.card-hover:hover::before {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }

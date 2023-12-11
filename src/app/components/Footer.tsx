@@ -1,9 +1,14 @@
-import React from 'react';
+import React from "react";
 
 export const Footer = () => {
-	return (
-		<div className='w-full p-8 mt-auto flex justify-center border-t border-t-gray-600 bg-gradient-to-tr from-black to-gray-400/25'>
-			<p className='text-white/75 font-light text-center'>This site was made by Aron Hawkins using Next.js, TypeScript, and TailwindCSS. Deployed on Vercel.</p>
-		</div>
-	);
+  return (
+    <div className="bg-gradient-to-r from-blue-500 via-red-400 to-rose-500 pt-[1px]">
+      <div className="w-full p-4 mt-auto flex justify-center bg-black ">
+        <p className="text-white font-light text-center">
+          This site was made by Aron Hawkins using TypeScript, Next.js, and
+          TailwindCSS. Deployed on Vercel.
+        </p>
+      </div>
+    </div>
+  );
 };

@@ -11,11 +11,9 @@
   "dependencies": {
     "@cloudinary/react": "^1.11.2",
     "@cloudinary/url-gen": "^1.11.2",
-    "@react-three/fiber": "^8.13.7",
     "@types/node": "20.5.0",
     "@types/react": "18.2.20",
     "@types/react-dom": "18.2.7",
-    "@types/three": "^0.155.1",
     "autoprefixer": "10.4.15",
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.16",
@@ -30,7 +28,6 @@
     "react-transition-group": "^4.4.5",
     "swiper": "^10.2.0",
     "tailwindcss": "3.3.3",
-    "three": "^0.155.0",
     "typescript": "5.1.6",
     "yet-another-react-lightbox": "^3.12.1"
   },
