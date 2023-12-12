@@ -1,5 +1,5 @@
 import Image from "next/image";
-import aron_headshot from "../../../public/headshots/aron_headshot.png";
+import aron_headshot from "../../../public/aron_images/aron_headshot.png";
 import {
   AiOutlineInstagram,
   AiFillGithub,

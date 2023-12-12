@@ -1,8 +1,8 @@
 import Image from "next/image";
-import aron_at_desk from "../../../public/headshots/aron_at_desk.jpeg";
-import aron_at_desk_horizontal from "../../../public/headshots/CultureShootSEP23-20.webp";
-import birthday from "../../../public/headshots/IMG_3178.webp";
-import aron_jane from "../../../public/headshots/aron_jane.webp";
+import aron_at_desk from "../../../public/aron_images/aron_at_desk.jpeg";
+import aron_at_desk_horizontal from "../../../public/aron_images/CultureShootSEP23-20.webp";
+import birthday from "../../../public/aron_images/IMG_3178.webp";
+import aron_jane from "../../../public/aron_images/aron_jane.webp";
 
 export const AboutSection = () => {
   return (
@@ -27,7 +27,7 @@ export const AboutSection = () => {
       </div>
 
       <div className=" grid grid-cols-6 grid-rows-2 gap-8 w-full min-h-[30rem]">
-        <div className="row-span-1 col-span-4 relative w-full h-full rounded-lg overflow-hidden transition-transform duration-500 hover:scale-110">
+        <div className="row-span-1 col-span-4 relative w-full h-full rounded-lg overflow-hidden transition-transform duration-500 hover:scale-105">
           <Image
             src={aron_at_desk_horizontal}
             alt=""
@@ -35,7 +35,7 @@ export const AboutSection = () => {
             className=" object-cover w-full h-full transition-transform duration-700 hover:scale-110"
           />
         </div>
-        <div className="row-span-1 col-span-2 relative w-full h-full rounded-lg overflow-hidden transition-transform duration-500 hover:scale-110">
+        <div className="row-span-1 col-span-2 relative w-full h-full rounded-lg overflow-hidden transition-transform duration-500 hover:scale-105">
           <Image
             src={aron_jane}
             alt=""
@@ -43,7 +43,7 @@ export const AboutSection = () => {
             className="object-cover w-full h-full transition-transform duration-700 hover:scale-110"
           />
         </div>
-        <div className="row-span-1 col-span-2 relative w-full h-full rounded-lg overflow-hidden transition-transform duration-500 hover:scale-110">
+        <div className="row-span-1 col-span-2 relative w-full h-full rounded-lg overflow-hidden transition-transform duration-500 hover:scale-105">
           <Image
             src={aron_at_desk}
             alt=""
@@ -51,7 +51,7 @@ export const AboutSection = () => {
             className="object-cover w-full h-full transition-transform duration-700 hover:scale-110"
           />
         </div>
-        <div className="row-span-1 col-span-4 relative w-full h-full rounded-lg overflow-hidden transition-transform duration-500 hover:scale-110">
+        <div className="row-span-1 col-span-4 relative w-full h-full rounded-lg overflow-hidden transition-transform duration-500 hover:scale-105">
           <Image
             src={birthday}
             alt=""

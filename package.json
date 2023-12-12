@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@cloudinary/react": "^1.11.2",
@@ -32,6 +34,15 @@
     "yet-another-react-lightbox": "^3.12.1"
   },
   "devDependencies": {
-    "@types/react-transition-group": "^4.4.6"
+    "@storybook/addon-essentials": "^7.6.4",
+    "@storybook/addon-interactions": "^7.6.4",
+    "@storybook/addon-links": "^7.6.4",
+    "@storybook/addon-onboarding": "^1.0.10",
+    "@storybook/blocks": "^7.6.4",
+    "@storybook/nextjs": "^7.6.4",
+    "@storybook/react": "^7.6.4",
+    "@storybook/test": "^7.6.4",
+    "@types/react-transition-group": "^4.4.6",
+    "storybook": "^7.6.4"
   }
 }
