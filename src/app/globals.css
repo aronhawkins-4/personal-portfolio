@@ -8,6 +8,9 @@
   --background-end-rgb: 0, 0, 0;
 }
 
+html {
+  scroll-behavior: smooth !important;
+}
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -66,6 +69,7 @@ body {
 }
 .footer-gradient::before {
   animation: footerGradient 10s linear infinite;
+  pointer-events: none;
 }
 
 .banner-carousel {

@@ -6,9 +6,12 @@ import aron_jane from "../../../public/aron_images/aron_jane.webp";
 
 export const AboutSection = () => {
   return (
-    <div className="w-full max-w-7xl m-auto flex gap-16 items-center mt-8 pb-16  px-8 md:px-16">
+    <div
+      className="w-full max-w-7xl m-auto flex flex-col md:flex-row gap-16 items-center mt-8 pb-16  px-8 md:px-16"
+      id="about"
+    >
       <div className="w-full flex flex-col items-start">
-        <h2 className="text-6xl font-bold bg-gradient-to-r from-blue-500 via-red-400 to-rose-500 bg-clip-text text-transparent whitespace-nowrap">
+        <h2 className="text-5xl sm:text-6xl font-bold bg-gradient-to-r from-blue-500 via-red-400 to-rose-500 bg-clip-text text-transparent whitespace-nowrap">
           About me
         </h2>
         <p className=" text-xl font-light mt-4">
@@ -26,7 +29,7 @@ export const AboutSection = () => {
         </p>
       </div>
 
-      <div className=" grid grid-cols-6 grid-rows-2 gap-8 w-full min-h-[30rem]">
+      <div className="grid grid-cols-6 grid-rows-2 gap-4 md:gap-8 w-full min-h-[30rem]">
         <div className="row-span-1 col-span-4 relative w-full h-full rounded-lg overflow-hidden transition-transform duration-500 hover:scale-105">
           <Image
             src={aron_at_desk_horizontal}

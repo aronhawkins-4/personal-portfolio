@@ -8,6 +8,8 @@ import { EducationSection } from "./components/EducationSection";
 import { ExperienceSection } from "./components/ExperienceSection";
 import { AnimatedBanner } from "./components/AnimatedBanner";
 import { AboutSection } from "./components/AboutSection";
+import { WorkSection } from "./components/WorkSection";
+import { ContactSection } from "./components/ContactSection";
 
 export default function Home() {
   return (
@@ -23,28 +25,28 @@ export default function Home() {
               sizes="any"
             />
           </div>
-          <h1 className="text-7xl text-white font-bold mt-8 text-center">
+          <h1 className="text-5xl md:text-7xl text-white font-bold mt-8 text-center">
             Hello,&nbsp;
             <span className="bg-gradient-to-r from-blue-500 via-red-400 to-rose-500 bg-clip-text text-transparent">
               I&apos;m Aron
             </span>
             , a full-stack software developer from Texas.
           </h1>
-          <p className=" text-2xl font-light text-center mt-4">
+          <p className=" text-xl md:text-2xl font-light text-center mt-4">
             I specialize in building end-to-end applications using TypeScript,
             React, and Next.js. I am experienced in fields including SAAS
             applications, e-commerce platforms, and mobile development.
           </p>
-          <div className="flex gap-4 justify-center m-auto mt-8">
+          <div className="flex flex-col w-full sm:flex-row gap-4 justify-center m-auto mt-8">
             <Link
               href=""
-              className="px-8 py-4 rounded-full w-48 uppercase font-normal border border-white text-center bg-white text-black transition-colors hover:bg-transparent hover:text-white "
+              className="px-8 py-4 rounded-full w-full sm:w-48 uppercase font-normal border border-white text-center bg-white text-black transition-colors hover:bg-transparent hover:text-white "
             >
               <span className="-mb-[2px] block">Get In Touch</span>
             </Link>
             <Link
-              href=""
-              className="px-8 py-4 rounded-full w-48 uppercase font-normal border border-white text-center transition-colors hover:bg-white hover:text-black "
+              href="#work"
+              className="px-8 py-4 rounded-full w-full sm:w-48 uppercase font-normal border border-white text-center transition-colors hover:bg-white hover:text-black "
             >
               <span className="-mb-[2px] block">View My Work</span>
             </Link>
@@ -56,6 +58,8 @@ export default function Home() {
         <EducationSection />
 
         <AboutSection />
+        <WorkSection />
+        <ContactSection />
       </div>
 
       <Footer />
