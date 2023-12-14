@@ -1,5 +1,3 @@
-import { HeaderCard } from "./components/HeaderCard";
-import { ContentCard } from "./components/ContentCard";
 import { Footer } from "./components/Footer";
 import Link from "next/link";
 import aron_headshot from "../../public/aron_images/Sidekick-May22-Photoshoot-17 copy.webp";
@@ -10,9 +8,11 @@ import { AnimatedBanner } from "./components/AnimatedBanner";
 import { AboutSection } from "./components/AboutSection";
 import { WorkSection } from "./components/WorkSection";
 import { ContactSection } from "./components/ContactSection";
+import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 
 export default function Home() {
   return (
+    // <GoogleReCaptchaProvider reCaptchaKey={process.env.RECAPTCHA_SITE_KEY!}>
     <main className="min-h-screen overflow-hidden">
       <div className="flex flex-col items-center justify-start relative gap-8">
         <div className="flex flex-col gap-2 items-center justify-center max-w-6xl m-auto p-8 md:p-16 ">
@@ -39,7 +39,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col w-full sm:flex-row gap-4 justify-center m-auto mt-8">
             <Link
-              href=""
+              href="#contact"
               className="px-8 py-4 rounded-full w-full sm:w-48 uppercase font-normal border border-white text-center bg-white text-black transition-colors hover:bg-transparent hover:text-white "
             >
               <span className="-mb-[2px] block">Get In Touch</span>
@@ -64,5 +64,6 @@ export default function Home() {
 
       <Footer />
     </main>
+    // </GoogleReCaptchaProvider>
   );
 }

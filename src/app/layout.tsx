@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { League_Spartan } from "next/font/google";
-import { Sidebar } from "./components/Sidebar";
+import { Toaster } from "react-hot-toast";
 
 const leauge_spartan = League_Spartan({ subsets: ["latin"] });
 
@@ -21,6 +21,7 @@ export default function RootLayout({
       <body className={` ${leauge_spartan.className}`}>
         {/* <Sidebar /> */}
         {children}
+        <Toaster />
       </body>
     </html>
   );
