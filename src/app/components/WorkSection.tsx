@@ -139,7 +139,7 @@ export const WorkSection = () => {
               className="object-cover transition-transform duration-700 group-hover:scale-110"
             />
           </div>
-          <div className="flex flex-col gap-2 p-12 border-t border-white/50">
+          <div className="flex flex-col gap-2 p-8 md:p-12 border-t border-white/50">
             <h3 className="text-2xl md:text-3xl uppercase font-semibold">
               Restaurant Voting App
             </h3>
