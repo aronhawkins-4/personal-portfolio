@@ -15,10 +15,10 @@ export const AboutSection = () => {
           About me
         </h2>
         <p className=" text-xl font-light mt-4">
-          I&apos;m Aron Hawkins, a software engineer and front-end developer
-          based in central Texas. I have a degree in Computer Science from
-          Arizona State University. My specialties include TypeScript, Next.js,
-          TailwindCSS, Shopify, and Webflow, and I am a certified expert in
+          I&apos;m Aron Hawkins, a full-stack software developer based in
+          central Texas. I have a degree in Computer Science from Arizona State
+          University. My specialties include TypeScript, Next.js, React Native,
+          TailwindCSS, REST APIs, GraphQL, and I am a certified expert in
           Webflow, Shopify, and Google Analytics. I&apos;m deeply passionate
           about creating digital experiences that seamlessly blend form and
           function. Whether it&apos;s building sophisticated e-commerce

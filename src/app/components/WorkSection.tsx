@@ -78,7 +78,7 @@ export const WorkSection = () => {
               Game Word Generator
             </h3>
             <p className="text-lg text-gray-300">
-              Web application that lets users word games
+              Web application that generates prompts for popular word games
             </p>
           </div>
         </Link>
