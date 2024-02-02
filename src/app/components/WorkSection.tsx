@@ -5,6 +5,7 @@ import pictionary from "../../../public/pictionary.png";
 import sidekick from "../../../public/sidekick.webp";
 import airbnb from "../../../public/airbnb/home_screen.png";
 import restaurants from "../../../public/restaurants/change_vote.png";
+import cromwell from "../../../public/cromwell/Properties-Cromwell-Commercial-Group (2).webp";
 import Link from "next/link";
 export const WorkSection = () => {
   return (
@@ -35,6 +36,28 @@ export const WorkSection = () => {
             </h3>
             <p className="text-lg text-gray-300">
               Mobile RAG chatbot app for IOS and Android
+            </p>
+          </div>
+        </Link>
+        <Link
+          href="https://www.cromwellcommercialgroup.com/"
+          target="_blank"
+          className=" bg-slate-950 rounded-xl overflow-hidden transition-transform duration-500 hover:scale-105 group"
+        >
+          <div className="w-full aspect-video relative overflow-hidden">
+            <Image
+              src={cromwell}
+              alt=""
+              fill
+              className="object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+          </div>
+          <div className="flex flex-col gap-2 p-8 md:p-12 border-t border-white/50">
+            <h3 className="text-3xl uppercase font-semibold">
+              Cromwell Commercial Group
+            </h3>
+            <p className="text-lg text-gray-300">
+              Real Estate site with custom database and Google Maps integrations
             </p>
           </div>
         </Link>
@@ -105,28 +128,6 @@ export const WorkSection = () => {
           </div>
         </Link>
         <Link
-          href="https://next13-airbnb-clone-psi.vercel.app/"
-          target="_blank"
-          className=" bg-slate-950 rounded-xl overflow-hidden transition-transform duration-500 hover:scale-105 group"
-        >
-          <div className="w-full aspect-video relative overflow-hidden">
-            <Image
-              src={airbnb}
-              alt=""
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-110"
-            />
-          </div>
-          <div className="flex flex-col gap-2 p-8 md:p-12 border-t border-white/50">
-            <h3 className="text-2xl md:text-3xl uppercase font-semibold">
-              Airbnb Clone
-            </h3>
-            <p className="text-lg text-gray-300">
-              Working clone of the popular web app
-            </p>
-          </div>
-        </Link>
-        <Link
           href="https://sidekick-decide-app.vercel.app/"
           target="_blank"
           className=" bg-slate-950 rounded-xl overflow-hidden transition-transform duration-500 hover:scale-105 group"
@@ -145,6 +146,28 @@ export const WorkSection = () => {
             </h3>
             <p className="text-lg text-gray-300">
               Web app for friends to vote on restaurants to eat at
+            </p>
+          </div>
+        </Link>
+        <Link
+          href="https://next13-airbnb-clone-psi.vercel.app/"
+          target="_blank"
+          className=" bg-slate-950 rounded-xl overflow-hidden transition-transform duration-500 hover:scale-105 group"
+        >
+          <div className="w-full aspect-video relative overflow-hidden">
+            <Image
+              src={airbnb}
+              alt=""
+              fill
+              className="object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+          </div>
+          <div className="flex flex-col gap-2 p-8 md:p-12 border-t border-white/50">
+            <h3 className="text-2xl md:text-3xl uppercase font-semibold">
+              Airbnb Clone
+            </h3>
+            <p className="text-lg text-gray-300">
+              Working clone of the popular web app
             </p>
           </div>
         </Link>
