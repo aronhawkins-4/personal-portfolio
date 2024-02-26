@@ -8,7 +8,6 @@ import { AnimatedBanner } from "./components/AnimatedBanner";
 import { AboutSection } from "./components/AboutSection";
 import { WorkSection } from "./components/WorkSection";
 import { ContactSection } from "./components/ContactSection";
-import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 
 export default function Home() {
   return (
