@@ -1,8 +1,8 @@
 import Image from "next/image";
-import aron_at_desk from "../../../public/aron_images/aron_at_desk.jpeg";
-import aron_at_desk_horizontal from "../../../public/aron_images/CultureShootSEP23-20.webp";
-import birthday from "../../../public/aron_images/IMG_3178.webp";
-import aron_jane from "../../../public/aron_images/aron_jane.webp";
+import aron_at_desk from "@/../public/aron_images/aron_at_desk.jpeg";
+import aron_at_desk_horizontal from "@/../public/aron_images/CultureShootSEP23-20.webp";
+import birthday from "@/../public/aron_images/IMG_3178.webp";
+import aron_jane from "@/../public/aron_images/aron_jane.webp";
 
 export const AboutSection = () => {
   return (

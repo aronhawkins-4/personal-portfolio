@@ -6,11 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate:types": "PAYLOAD_CONFIG_PATH=src/payload.config.ts payload generate:types"
   },
   "dependencies": {
     "@cloudinary/react": "^1.11.2",
     "@cloudinary/url-gen": "^1.11.2",
+    "@payloadcms/db-postgres": "^3.0.0-beta.10",
+    "@payloadcms/next": "^3.0.0-beta.10",
+    "@payloadcms/richtext-lexical": "^3.0.0-beta.10",
     "@types/node": "20.5.0",
     "@types/react": "18.2.20",
     "@types/react-dom": "^18.2.7",
@@ -22,6 +26,7 @@
     "lightgallery": "^2.7.1",
     "next": "^14.0.4",
     "nodemailer": "^6.9.7",
+    "payload": "^3.0.0-beta.10",
     "postcss": "8.4.28",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

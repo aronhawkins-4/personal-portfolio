@@ -1,6 +1,6 @@
 import { Footer } from "./components/Footer";
 import Link from "next/link";
-import aron_headshot from "../../public/aron_images/Sidekick-May22-Photoshoot-17 copy.webp";
+import aron_headshot from "@/../public/aron_images/Sidekick-May22-Photoshoot-17 copy.webp";
 import Image from "next/image";
 import { EducationSection } from "./components/EducationSection";
 import { ExperienceSection } from "./components/ExperienceSection";
