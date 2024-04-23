@@ -19,7 +19,7 @@ export const WorkCard: React.FC<WorkCardProps> = ({
     <Link
       href={link || ""}
       target="_blank"
-      className=" bg-slate-950 rounded-xl overflow-hidden transition-transform duration-500 hover:scale-105 group"
+      className="  bg-gradient-to-r from-slate-900 to-slate-950 rounded-xl overflow-hidden transition-transform duration-500 hover:scale-105 group"
     >
       <div className="w-full aspect-video relative overflow-hidden">
         <Image
