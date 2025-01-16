@@ -1,8 +1,6 @@
 "use client";
-import { FormEvent, useEffect, useState } from "react";
+import { FormEvent, useEffect, useState, useActionState } from "react";
 import { handleSubmit } from "../actions/handleSubmit";
-// @ts-expect-error
-import { useFormState } from "react-dom";
 import toast from "react-hot-toast";
 export const ContactForm = () => {
   const [name, setName] = useState("");
@@ -13,7 +11,7 @@ export const ContactForm = () => {
     ok: false,
     message: null,
   };
-  const [state, formAction] = useFormState(handleSubmit, initialState);
+  const [state, formAction] = useActionState(handleSubmit, initialState);
 
   useEffect(() => {
     if (!state.ok && state.message) {
