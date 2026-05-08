@@ -1,0 +1,297 @@
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e7]: A
+        - generic [ref=e8]:
+          - generic [ref=e9]: Aron Hawkins
+          - generic [ref=e10]: EST. 2020 · WACO
+      - generic [ref=e11]:
+        - link "WORK" [ref=e12] [cursor=pointer]:
+          - /url: "#work"
+        - link "SERVICES" [ref=e13] [cursor=pointer]:
+          - /url: "#services"
+        - link "PROCESS" [ref=e14] [cursor=pointer]:
+          - /url: "#process"
+        - link "ABOUT" [ref=e15] [cursor=pointer]:
+          - /url: "#about"
+        - link "FAQ" [ref=e16] [cursor=pointer]:
+          - /url: "#faq"
+      - link "CONTACT ME" [ref=e18] [cursor=pointer]:
+        - /url: "#contact"
+  - generic [ref=e20]:
+    - generic [ref=e21]:
+      - generic [ref=e22]:
+        - generic [ref=e23]: + FREELANCE · FULL-STACK · FOR HIRE +
+        - heading "Aron Hawkins." [level=1] [ref=e24]:
+          - text: Aron
+          - emphasis [ref=e25]: Hawkins.
+        - paragraph [ref=e26]: I build fast, durable web applications for founders and small teams.
+        - paragraph [ref=e27]: TypeScript end-to-end, edge-deployed by default, no framework-of-the-month nonsense. Solo or as contract lead.
+        - generic [ref=e28]:
+          - button "BOOK A PROJECT →" [ref=e29]
+          - button "SEE THE WORK" [ref=e30]
+        - generic [ref=e31]: Replies in < 24h · Booking Q3 2026
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - generic [ref=e36]: A
+            - generic [ref=e37]:
+              - text: Your B&W headshot
+              - text: (use the second photo)
+          - generic [ref=e38]:
+            - generic [ref=e39]: Aron Hawkins
+            - generic [ref=e40]: Brooklyn, NY
+        - generic [ref=e41]: EST. 2017
+    - generic [ref=e42]:
+      - generic [ref=e43]: ↑ 9 YRS
+      - generic [ref=e44]: ↑ 40+ SHIPPED
+      - generic [ref=e45]: ↑ BROOKLYN
+      - generic [ref=e46]: ↑ < 24H REPLY
+      - generic [ref=e47]: ↑ Q3 2026
+  - generic [ref=e49]:
+    - generic [ref=e50]:
+      - generic [ref=e51]: + SERVICES +
+      - heading "What I build" [level=2] [ref=e52]
+    - generic [ref=e53]:
+      - generic [ref=e54]:
+        - generic [ref=e55]:
+          - generic [ref=e56]: ↗
+          - generic [ref=e57]: "01"
+        - heading "Greenfield builds" [level=3] [ref=e58]
+        - paragraph [ref=e59]: From Figma to deployed product. Auth, payments, infra. 4–12 weeks, fixed scope.
+      - generic [ref=e60]:
+        - generic [ref=e61]:
+          - generic [ref=e62]: ↺
+          - generic [ref=e63]: "02"
+        - heading "Codebase rescues" [level=3] [ref=e64]
+        - paragraph [ref=e65]: Inheriting a mess? I'll triage, document, refactor, and ship the next release.
+      - generic [ref=e66]:
+        - generic [ref=e67]:
+          - generic [ref=e68]: ◆
+          - generic [ref=e69]: "03"
+        - heading "Edge migrations" [level=3] [ref=e70]
+        - paragraph [ref=e71]: Move your slow Node API to Cloudflare Workers + D1. Cut p95 by 4–10×.
+      - generic [ref=e72]:
+        - generic [ref=e73]:
+          - generic [ref=e74]: ⚑
+          - generic [ref=e75]: "04"
+        - heading "Fractional lead" [level=3] [ref=e76]
+        - paragraph [ref=e77]: Contract tech lead for seed-stage teams. Reviews, hiring, architecture.
+  - generic [ref=e79]:
+    - generic [ref=e80]:
+      - generic [ref=e81]: + RECENT PROJECTS +
+      - heading "Selected work" [level=2] [ref=e82]
+    - generic [ref=e83]:
+      - generic [ref=e84]:
+        - generic [ref=e85]:
+          - generic [ref=e86]: // fieldnote — sync engine
+          - generic [ref=e87]: const log = await db.observe()
+          - generic [ref=e88]: ".where({ user: id })"
+          - generic [ref=e89]: .syncCRDT()
+          - generic [ref=e90]: ↗ 12,431 active sessions
+          - generic [ref=e91]: LIVE
+        - generic [ref=e92]:
+          - generic [ref=e93]:
+            - generic [ref=e94]: ↑ 01 · GREENFIELD
+            - generic [ref=e95]: "2024"
+          - heading "Fieldnote" [level=3] [ref=e96]
+          - paragraph [ref=e97]: Note app for naturalists. Offline-first, CRDT sync, iOS + web from one codebase.
+          - generic [ref=e98]:
+            - generic [ref=e99]: 12k
+            - generic [ref=e100]: MAU at launch
+          - generic [ref=e101]:
+            - generic [ref=e102]: Solo · 7 weeks
+            - generic [ref=e103]: READ MORE →
+      - generic [ref=e104]:
+        - img "p95 latency improvement chart" [ref=e106]:
+          - generic [ref=e109]: 1.4s ↓
+          - generic [ref=e110]: 110ms
+        - generic [ref=e113]:
+          - generic [ref=e114]:
+            - generic [ref=e115]: ↑ 02 · EDGE MIGRATION
+            - generic [ref=e116]: "2024"
+          - heading "Harvester Logistics" [level=3] [ref=e117]
+          - paragraph [ref=e118]: 6-yr Express monolith → Cloudflare Workers. p95 cut from 1.4s to 110ms.
+          - generic [ref=e119]:
+            - generic [ref=e120]: 12.7×
+            - generic [ref=e121]: p95 latency improvement
+          - generic [ref=e122]:
+            - generic [ref=e123]: Lead · 5 weeks
+            - generic [ref=e124]: READ MORE →
+      - generic [ref=e125]:
+        - img "Database schema diagram" [ref=e127]:
+          - generic [ref=e129]: artists
+          - generic [ref=e131]: albums
+          - generic [ref=e133]: tracks
+          - generic [ref=e135]: labels (240)
+          - generic [ref=e137]: royalties
+        - generic [ref=e141]:
+          - generic [ref=e142]:
+            - generic [ref=e143]: ↑ 03 · CODEBASE RESCUE
+            - generic [ref=e144]: "2024"
+          - heading "Ledger.fm" [level=3] [ref=e145]
+          - paragraph [ref=e146]: Inherited a half-built music-rights ledger. Rebuilt sync, shipped v1.
+          - generic [ref=e147]:
+            - generic [ref=e148]: "240"
+            - generic [ref=e149]: labels onboarded in 90 days
+          - generic [ref=e150]:
+            - generic [ref=e151]: Lead · 14 weeks
+            - generic [ref=e152]: READ MORE →
+      - generic [ref=e153]:
+        - img "ETL pipeline diagram" [ref=e155]:
+          - generic [ref=e157]: "14"
+          - generic [ref=e158]: APIs
+          - generic [ref=e160]: ETL
+          - generic [ref=e161]: cron
+          - generic [ref=e163]: weekly digest
+        - generic [ref=e164]:
+          - generic [ref=e165]:
+            - generic [ref=e166]: ↑ 04 · GREENFIELD
+            - generic [ref=e167]: "2024"
+          - heading "Common Almanac" [level=3] [ref=e168]
+          - paragraph [ref=e169]: Civic dashboard for a regional newsroom. 14 APIs, weekly editorial digest.
+          - generic [ref=e170]:
+            - generic [ref=e171]: "14"
+            - generic [ref=e172]: data sources unified
+          - generic [ref=e173]:
+            - generic [ref=e174]: Solo · 9 weeks
+            - generic [ref=e175]: READ MORE →
+    - button "SEE ALL 6 PROJECTS →" [ref=e177]
+  - generic [ref=e179]:
+    - generic [ref=e180]:
+      - generic [ref=e181]: + PROCESS +
+      - heading "How it goes" [level=2] [ref=e182]
+    - generic [ref=e183]:
+      - generic [ref=e184]:
+        - generic [ref=e185]: "1"
+        - heading "Talk" [level=4] [ref=e186]
+        - paragraph [ref=e187]: 30-min call. What you're building, what success looks like. Free.
+      - generic [ref=e188]:
+        - generic [ref=e189]: "2"
+        - heading "Scope" [level=4] [ref=e190]
+        - paragraph [ref=e191]: "Written proposal: deliverables, timeline, fixed price or hourly."
+      - generic [ref=e192]:
+        - generic [ref=e193]: "3"
+        - heading "Build" [level=4] [ref=e194]
+        - paragraph [ref=e195]: Daily commits to your repo. Loom walkthrough every Friday.
+      - generic [ref=e196]:
+        - generic [ref=e197]: "4"
+        - heading "Ship" [level=4] [ref=e198]
+        - paragraph [ref=e199]: Deploy, hand off, document. 30 days of bug fixes included.
+  - generic [ref=e202]:
+    - generic [ref=e203]:
+      - generic [ref=e204]: + ABOUT +
+      - heading "The hand" [level=2] [ref=e205]
+      - paragraph [ref=e206]: I've been writing software for the web for nine years — four of them as a freelancer with seed-stage startups, agencies, and the occasional design studio.
+      - paragraph [ref=e207]: "Most of my work falls into one of three buckets: standing up a new product from a Figma file, rescuing a codebase someone abandoned, or carving a slow Rails monolith into something that responds in under 200ms."
+      - paragraph [ref=e208]: I work alone or as a contract lead. I read the docs. I write the migrations. I delete more code than I add.
+      - generic [ref=e209]:
+        - generic [ref=e210]: CURRENTLY
+        - generic [ref=e211]: Booking projects · Q3 2026
+    - generic [ref=e212]:
+      - generic [ref=e213]: + THE TOOLS +
+      - heading "Stack" [level=2] [ref=e214]
+      - generic [ref=e215]: PRIMARY
+      - generic [ref=e216]:
+        - generic [ref=e217]: TypeScript
+        - generic [ref=e218]: React
+        - generic [ref=e219]: Node.js
+        - generic [ref=e220]: Postgres
+      - generic [ref=e221]: ALSO FLUENT IN
+      - generic [ref=e222]:
+        - generic [ref=e223]: Next.js
+        - generic [ref=e224]: TanStack Start
+        - generic [ref=e225]: CF Workers
+        - generic [ref=e226]: D1
+        - generic [ref=e227]: R2
+        - generic [ref=e228]: Drizzle
+        - generic [ref=e229]: tRPC
+        - generic [ref=e230]: Tailwind
+      - generic [ref=e231]: "\"Open to other stacks for the right project — Rails, Go, Elixir all welcome.\""
+  - generic [ref=e233]:
+    - generic [ref=e234]:
+      - generic [ref=e235]: + TESTIMONIALS +
+      - heading "Kind words" [level=2] [ref=e236]
+    - generic [ref=e237]:
+      - generic [ref=e238]:
+        - generic [ref=e239]: "\""
+        - paragraph [ref=e240]: Aron shipped what three of our previous contractors couldn't. Half the time, no drama, code we can actually maintain.
+        - generic [ref=e241]:
+          - generic [ref=e242]: Maya Chen
+          - generic [ref=e243]: FOUNDER, HARVESTER LOGISTICS
+      - generic [ref=e244]:
+        - generic [ref=e245]: "\""
+        - paragraph [ref=e246]: Best technical hire we made all year. Read the codebase, found three bugs we didn't know we had, then fixed them.
+        - generic [ref=e247]:
+          - generic [ref=e248]: Theo Rodriguez
+          - generic [ref=e249]: CTO, LEDGER.FM
+      - generic [ref=e250]:
+        - generic [ref=e251]: "\""
+        - paragraph [ref=e252]: He treated our budget like his own money. Came in $4k under the estimate and threw in a migration we needed.
+        - generic [ref=e253]:
+          - generic [ref=e254]: Sasha Voigt
+          - generic [ref=e255]: EDITOR, COMMON ALMANAC
+  - generic [ref=e257]:
+    - generic [ref=e258]:
+      - generic [ref=e259]: + FAQ +
+      - heading "Common questions" [level=2] [ref=e260]
+    - generic [ref=e261]:
+      - generic [ref=e262]:
+        - button "Do you work with non-technical founders? −" [ref=e263]:
+          - generic [ref=e264]: Do you work with non-technical founders?
+          - generic [ref=e265]: −
+        - paragraph [ref=e266]: Most of my clients are. I'll translate engineering tradeoffs into plain language, and won't push decisions back on you that I should be making.
+      - generic [ref=e267]:
+        - button "What's your rate? −" [ref=e268]:
+          - generic [ref=e269]: What's your rate?
+          - generic [ref=e270]: −
+        - paragraph [ref=e271]: Fixed-scope projects start at $12k. Fractional lead work is $180/hr or $14k/mo retainer. Free intro call to scope.
+      - generic [ref=e272]:
+        - button "Will you sign an NDA? −" [ref=e273]:
+          - generic [ref=e274]: Will you sign an NDA?
+          - generic [ref=e275]: −
+        - paragraph [ref=e276]: Yes — mutual NDA before any technical conversation, no problem. Send me yours or I'll send mine.
+      - button "Can you work with my existing team? +" [ref=e278]:
+        - generic [ref=e279]: Can you work with my existing team?
+        - generic [ref=e280]: +
+      - button "Do you do design work? +" [ref=e282]:
+        - generic [ref=e283]: Do you do design work?
+        - generic [ref=e284]: +
+      - button "How small is too small? +" [ref=e286]:
+        - generic [ref=e287]: How small is too small?
+        - generic [ref=e288]: +
+  - generic [ref=e290]:
+    - generic [ref=e291]:
+      - generic [ref=e292]: ✦
+      - heading "Let's build something." [level=2] [ref=e293]:
+        - text: Let's build
+        - emphasis [ref=e294]: something.
+      - paragraph [ref=e295]: Tell me what you're working on. I usually reply within a day. If it's not a fit, I'll point you toward someone better suited.
+    - generic [ref=e296]:
+      - textbox "Your name" [ref=e297]
+      - textbox "Email" [ref=e298]
+      - combobox [ref=e299]:
+        - option "Greenfield build" [selected]
+        - option "Codebase rescue"
+        - option "Edge migration"
+        - option "Fractional lead"
+      - combobox [ref=e300]:
+        - option "$15–50k" [selected]
+        - option "$50–100k"
+        - option "$100k+"
+        - option "Hourly / retainer"
+      - combobox [ref=e301]:
+        - option "Q3 2026" [selected]
+        - option "Q4 2026"
+        - option "Q1 2027"
+        - option "Flexible"
+      - textbox "What are you building?" [ref=e302]
+      - button "SEND →" [ref=e303]
+  - contentinfo [ref=e304]:
+    - generic [ref=e305]:
+      - generic [ref=e306]: ARONHAWKINS.DEV · GITHUB.COM/ARONHAWKINS · READ.CV/ARON · BROOKLYN, NY
+      - generic [ref=e307]:
+        - generic [ref=e308]: © 2026 ARON HAWKINS
+        - generic [ref=e309]: HAND-BUILT IN BROOKLYN
+        - generic [ref=e310]: V1.0
